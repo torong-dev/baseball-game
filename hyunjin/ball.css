@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.home__container {
+    position: relative;
+    height: 1000px;
+
+    background-image: linear-gradient(45deg,
+            rgb(51 43 43 / 75%),
+            rgb(20 19 20 / 61%)), url("https://us.123rf.com/450wm/adrenalinapura/adrenalinapura1308/adrenalinapura130800008/21730613-%EC%95%BC%EA%B5%AC%EC%9D%98-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8.jpg");
+    max-height: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 280px;
+    padding: 11px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 7px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+
+    margin-left: 8px;
+}
+
+.home__descript {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.home__title {
+    color: white;
+    font-size: 45px;
+    padding-top: 30px;
+}
+
+#output {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}

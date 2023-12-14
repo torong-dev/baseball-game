@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ball.css">
+    <title>숫자야구 게임</title>
+</head>
+
+<body class="home__container">
+    <h1 class="home__title">숫자 야구 게임!</h1>
+    <p class="home__descript">
+        <br>
+        컴퓨터가 세 자리 숫자를 생성하였습니다.
+        <br>
+        정답을 맞춰보세요!
+        <br><br>
+        [게임 진행 방식]
+        <br>
+        숫자의 값과 위치가 모두 일치하면 S
+        <br>
+        숫자의 값은 일치하지만 위치가 틀린다면 B
+        <br><br>
+        숫자 3개를 모두 맞춘 경우, 게임을 종료합니다.
+        <br>
+    </p>
+    <div class="input">
+        <input type="text" id="userInput" placeholder=" 세 자리 숫자를 입력하세요">
+        <button onclick="checkGuess()">시도</button>
+    </div>
+    <div id="output"></div>
+    <script src="ball.js"></script>
+</body>
+
+</html>
