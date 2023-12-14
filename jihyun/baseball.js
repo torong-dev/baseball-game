@@ -53,3 +53,33 @@ function checkGuess(answer, guess) {
 
   return `${ballsStr}${strikesStr}`;
 }
+
+// 게임 실행 함수
+function playNumberBaseball() {
+  const answer = threeRandomNumber();
+  let attempts = 0;
+
+  console.log("컴퓨터가 숫자를 생성하였습니다. 답을 맞춰보세요!");
+
+  // 입력을 받는 함수
+  function getUserInput() {
+    // Readline 모듈 사용
+    rl.question(`${attempts + 1}번째 시도: `, (userGuess) => {
+      const result = checkGuess(answer, userGuess);
+      console.log(result);
+
+      if (result === "3S") {
+        console.log(`${attempts + 1}번만에 맞혔습니다.`);
+        console.log("게임을 종료합니다.");
+        rl.close();
+      } else {
+        attempts++;
+        getUserInput();
+      }
+    });
+  }
+
+  getUserInput();
+}
+
+playNumberBaseball();
